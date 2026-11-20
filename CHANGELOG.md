@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Every print goes through the recorder; 3D preview of the print file
+
+- README.md: new rule in "Rules to know before starting": every print, from any computer, session or person, is sent to the recorder's printer address (192.168.68.10, port 8898), which passes it to the printer unchanged and keeps a 3D preview. Step 35 ("Send the print over the network") sends there, never straight to the printer, and checks the Home Assistant 3D Printer tab shows the file. The background notes describe the 3D preview of the file printing now (the print file, not the design).
+- Reason: a print sent straight to the printer from another computer could not be shown in 3D: the printer cannot hand a file back, so the file has to pass through the recorder on the way in.
+
 ## 2026-11-21 — Halfway and finished phone notifications with a picture
 
 - README.md: the recorder now sends the owner a phone notification with a phone 1 picture at halfway and when every print finishes, is cancelled or ends with an error, by itself for every print. Step 40 ("keep the cameras watched continuously") says the watcher notifies on start, problems and pauses, and the agent checks the halfway notification went out (and sends one itself if not). Step 43 ("Before anything is taken off the plate, take a picture") checks the finished notification went out. New practical note on how the notifications are sent.
