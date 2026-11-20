@@ -2,6 +2,13 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Tip check must actually see the tip; no hands-free cleaning; safe printer control
+
+- Step 33 ("check the tip is still clean on camera"): the head goes to the middle of the plate with the bed at Z = 150 or more, phone 1's light on and refocused, and the tip enlarged. An unclear view is a fail, not a pass. A short, thin, loose string of ooze is normal and passes, since the start code deals with it; only a blob, stuck plastic, a long or thick string or residue stops the print. The agent never cleans the tip itself.
+- Practical notes: "Cleaning the nozzle without hands" is replaced by "Never clean the nozzle without hands". "Seeing clearly on camera" now sends the head to the middle, not the front. New note "Talking to the printer over the network": short scripts, close every connection, never kill a script mid-command, and how to spot stale readings.
+- Practical notes: new "Suspected clog" (thin or missing purge line, beaded first layer: stop, the person runs "Load filament" over the middle of the plate and the stream is judged) and "Never switch the printer off with a hot nozzle".
+- Reason: open issue 10. The tip check passed a tip it could not see; the hands-free cleaning oozed onto the plate and dirtied the tip; stopping the cleaning script mid-command froze the printer's network control with the nozzle hot until a power cycle. The owner's main lesson: a tiny ooze string is fine as it is, and cleaning it only creates more mess.
+
 ## 2026-11-21 — Halfway and finished phone notifications with a picture
 
 - README.md: the recorder now sends the owner a phone notification with a phone 1 picture at halfway and when every print finishes, is cancelled or ends with an error, by itself for every print. Step 40 ("keep the cameras watched continuously") says the watcher notifies on start, problems and pauses, and the agent checks the halfway notification went out (and sends one itself if not). Step 43 ("Before anything is taken off the plate, take a picture") checks the finished notification went out. New practical note on how the notifications are sent.
