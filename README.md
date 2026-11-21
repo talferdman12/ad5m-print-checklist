@@ -161,8 +161,7 @@ When a material is tested and better values are found, update this table.
 
 ## Doing it on this printer (practical notes for a new agent)
 
-- To catch prints nobody wrote down, list the recorder's recordings: each has its start and end time and how it ended. Compare with TIMELINE.md and add any that are missing (golden rule 7).
-
+- **Prints nobody wrote down:** list the recorder's recordings; each has its start and end time and how it ended. Compare with TIMELINE.md and add any that are missing (golden rule 7).
 - **Finding the printer:** it is on the home Wi-Fi and calls itself "AD5M - read checklist first" in network discovery. Its address can change; search for it rather than relying on an old address. Its serial number is shown in its discovery reply and on its screen.
 - **Sending without the printer's own leveling:** OrcaSlicer's built-in "send to Flashforge" turned the printer's own leveling on in testing, which breaks step 13 (nozzle at or below 140 °C while the bed is measured). Send through the printer's network interface instead with "print now" on and "leveling before print" off.
 - **Cameras:** two phones watch the printer, one at the front and one at the side. A recorder on the home network records them while a print runs and shows a live view at the address given in "Rules to know before starting".
