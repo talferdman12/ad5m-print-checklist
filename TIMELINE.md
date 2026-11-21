@@ -270,3 +270,14 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - What worked: 240 °C / bed 75 °C on a large multi-part plate with this spool; no lifting
 - What did not: fine strings inside the body (likely travel moves across the open cavity); the print bypassed the recorder, so no 3D preview. This led to the printer's address being taken over by the recorder (see CHANGELOG, 2026-11-21 "Automatic 3D preview for every print").
 - Photos, recording, logs: `prints/records/puck_low2_test_end_phone1.jpg` (last frame of the recording), recorder "Puck-Low-2-test - orange PETG - fast"
+
+### 2026-11-21 21:38–22:21 — Acorn clicker rev D, two round parts ("both.gcode") — OK (recording marked OK; result not seen)
+- File: `both.gcode` (sliced and sent from another computer, 192.168.68.50, through the printer's usual address; first print through the recorder's stand-in at .52; the 3D preview was built automatically)
+- Spool: 9, Slic3D PETG orange
+- Settings: from the printer and the preview only: 240 °C, bed 75 °C, 0.20 mm layers, 102 layers, brim on, slicer supports on, estimate 37 min and 9.5 g. Seam, fan and speeds unknown (the recorder did not keep the file).
+- Changed since the last print with this spool: brim and supports on (the clean switch button had neither); otherwise unknown
+- What happened: recording started 21:30 ("Acorn clicker rev D - orange PETG"); sent 21:38 (one earlier attempt at 21:38:07 failed with "no route to host" between the recorder and the printer, the next went through); Started notification 21:39 with recording on and 3D preview; first layers clean on camera at 21:49; halfway 22:04; ended about 22:21. The finished screen was cleared before the recorder looked, so the last notification read "Print ended (ready) at 0 %" instead of "Finished" (fixed in the recorder the same evening). Recording stopped and marked OK 22:23.
+- Result: not seen by this checklist; the plate had been taken off before the recording stopped.
+- What worked: the automatic 3D preview and Started notification for a print sent from another computer
+- What did not: the finished notification's wording; no finished photo before the parts came off (step 43)
+- Photos, recording, logs: `prints/records/acorn_clicker_rev_d_midprint_phone1.jpg` (21:49), recorder "Acorn clicker rev D - orange PETG"
