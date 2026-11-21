@@ -37,7 +37,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
   | Speeds | first layer 30 mm/s, outer walls 60, everything else 100 or less, acceleration 4000 | same |
   | Layer height, walls | 0.20 mm, 3 walls | same |
 
-  Fit of small holes with these settings: holes print at their designed size (checked in the G-code of the switch button). An MX keycap's + socket at 4.15 × 1.35 mm was a little loose on the switch's stem; use 4.10 × 1.30 mm (a fit tester with 4.00, 4.05 and 4.10 rides along on the acorn print to confirm).
+  Fit of small holes with these settings: holes print at their designed size (checked in the G-code of the switch button). An MX keycap's + socket at 4.15 × 1.35 mm was a little loose on the switch's stem; use 4.10 × 1.30 mm (a fit tester with 4.00, 4.05 and 4.10 rides along on the acorn print to confirm). With that snugger socket, an MX switch in a 14.1 mm hole (1.5 mm plate, prints 1.6) pulls out when the cap is pulled; use a 14.0 mm hole where a cap grips the stem.
 
   Also printed well at 240 °C / bed 75 °C: the seven-part Puck Low 2 test plate (2026-11-21, 1 h 36 min, with brims), with only a few fine strings inside a hollow part.
 
