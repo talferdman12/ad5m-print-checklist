@@ -2,6 +2,13 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Automatic 3D preview for every print
+
+- The recorder now answers at the printer's address, 192.168.68.52, on everything a slicer uses (file sending, the control port and the network search), and passes it all to the printer unchanged. The printer moved to 192.168.68.152 and was renamed "AD5M direct - no 3D preview". Any file sent to the printer's usual address, by anyone, gets a 3D preview automatically.
+- README.md: removed the special sending address and the steps about checking for and fixing a missing preview (step 35 is back to "Send the print over the network to the printer"); the rules give the printer's address and say which network-search entry not to pick. OPEN-ISSUES.md: issue 10 closed.
+- TIMELINE.md, PRINT-LOG.md, FILAMENTS.md: the Puck Low 2 test print.
+- Reason: the owner wanted the preview to happen for every print with nobody doing anything special; a print from outside the checklist had none. The printer cannot hand back a file, so the copy has to be kept as the file passes.
+
 ## 2026-11-21 — Exact send address; "Started" notification
 
 - README.md: the sending rule and step 35 now give the exact address, `http://192.168.68.10:8898/uploadGcode`, and name the printer's own address (192.168.68.52) as the one never to use. Step 35 also checks the new "Started" notification. The camera rule describes it.

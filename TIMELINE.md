@@ -259,3 +259,14 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - What worked: 240 °C, no brim on parts sitting on a whole flat face, blended seam with a wipe
 - What did not: nothing seen
 - Photos, recording, logs: `prints/records/switch_button_orange_finished_phone1.jpg`, `prints/records/watch_20261121-1154.log`, recorder "Switch button plain orange PETG"
+
+### 2026-11-21 15:12–16:54 — Puck Low 2 test: seven-part puck (round case, body with lid and latch, toothed disc, flat parts), "fast" — OK
+- File: `puck_low2_test.gcode` (sliced and sent from a computer or session outside this checklist; the file is not on the owner's computer)
+- Spool: 9, Slic3D PETG orange
+- Settings: from the printer and recorder only: 240 °C, bed 75 °C, 115 layers, about 137 mm/s shown mid-print, brims on the parts (seen on camera). Layer height, seam, fan and profiles not recorded.
+- Changed since the last print with this spool: unknown (not sliced by this checklist); 240 °C and bed 75 °C match the clean switch button
+- What happened: recording started 15:12 by whoever sent it, file sent straight to the printer (no 3D preview on the Home Assistant tab, no "Started" notification because the recorder did not send one yet). Halfway notification 16:13 at 51 %. Finished 16:54 after 1 h 36 min (estimate 2 h 03 min); the recording was stopped and marked OK at 16:54.
+- Result: last camera frame shows all seven parts complete and standing, edges clean, brims attached; a few fine strings inside the body part. Not looked at by hand by this checklist.
+- What worked: 240 °C / bed 75 °C on a large multi-part plate with this spool; no lifting
+- What did not: fine strings inside the body (likely travel moves across the open cavity); the print bypassed the recorder, so no 3D preview. This led to the printer's address being taken over by the recorder (see CHANGELOG, 2026-11-21 "Automatic 3D preview for every print").
+- Photos, recording, logs: `prints/records/puck_low2_test_end_phone1.jpg` (last frame of the recording), recorder "Puck-Low-2-test - orange PETG - fast"
