@@ -41,6 +41,8 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 
   Also printed well at 240 °C / bed 75 °C: the seven-part Puck Low 2 test plate (2026-11-21, 1 h 36 min, with brims), with only a few fine strings inside a hollow part.
 
+  Also printed clean with these exact settings: the acorn clicker (2026-11-21, 44 min, 13 g): a 30 mm round dome printed upside down with no supports, and a scaly cap printed rim down with its own snap-off column under a hanging stem.
+
   What the failed try looked like: a blob of PETG pulled off the nozzle and smeared onto the right side of the brim, with a string trailing from it; a bump where the seam started at the front; a thin string across the part. These are signs of PETG gathering on a too-hot nozzle and being dropped at the seam, which is what the three changes fix.
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.

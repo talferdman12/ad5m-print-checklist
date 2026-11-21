@@ -281,3 +281,22 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - What worked: the automatic 3D preview and Started notification for a print sent from another computer
 - What did not: the finished notification's wording; no finished photo before the parts came off (step 43)
 - Photos, recording, logs: `prints/records/acorn_clicker_rev_d_midprint_phone1.jpg` (21:49), recorder "Acorn clicker rev D - orange PETG"
+
+### 2026-11-21 22:40–22:57 — "checklist-tests-21nov" (sent from another computer) — cancelled
+- File: `checklist-tests-21nov.gcode` (sent from 192.168.68.50; 35 layers, estimate about 37 min; 3D preview built automatically)
+- Spool: 9, Slic3D PETG orange (bed target 75 °C)
+- Settings: not recorded (sliced outside this session)
+- What happened: recording started 22:40 by the sender, file sent 22:40, Started notification 22:41. The owner cancelled it at about 22:56 during the start (bed measuring / first moves) so the acorn could print; the recorder's "Print ended (canceling)" notification went out 22:57. Recording stopped and marked cancelled by this session.
+- Result: nothing printed on the plate; a small curl of orange PETG was left hanging from the nozzle tip.
+- Photos, recording, logs: recorder "Checklist-tests-21nov" (cancelled)
+
+### 2026-11-21 22:59–23:46 — Acorn clicker: round-bottom nut, scaly cap with stalk (the keycap), MX fit tester — OK
+- File: `acorn_clicker_orange_petg.gcode` (design `designs/acorn_clicker/acorn_clicker.py`, viewer https://claude.ai/artifact/QyMaDhigQAuG4eEttiwENS)
+- Spool: 9, Slic3D PETG orange (on the printer since the morning, under 1 day)
+- Settings: 240 °C first layer and rest, bed 75 °C, 0.20 mm, 3 walls, 15 % infill, no brim, no slicer supports (the cap has its own snap-off column under its hanging stem, 0.2 mm gap), seam at the back blended (scarf) with a wipe, first layer 30 mm/s, outer walls 60, everything else 100 or less, acceleration 4000, fan 30–50 %; profiles "0.20mm Small Part PETG @AD5M" and "Orange PETG Slic3D (AD5M)". Nut printed upside down (switch hole facing down), cap rim down. Switch plate exactly the switch button's (14.1 mm hole, 1.5 mm plate that prints 1.6); cap + socket 4.10 × 1.30 mm; fit tester sockets 4.00 × 1.20, 4.05 × 1.25, 4.10 × 1.30.
+- Changed since the last print with this spool: same settings as the clean switch button; new socket size (4.10 × 1.30 instead of 4.15 × 1.35)
+- What happened: tip checked on camera before the start (step 33): a small PETG curl from the cancelled print hung from it. A hands-free purge blob at 240 °C in the front-right corner was made; the owner then cleaned the tip and plate and asked to start without extra purge lines. Recording started, finished screen of the cancelled print cleared, sent 22:59 (preview stored, Started notification 22:59, recording on). Nozzle stayed at 140 °C through homing and bed measuring. The leftover curl went into the start of the purge line. First layer clean on all parts (cap rim ring with the support foot centred, nut collar with the square hole, fit tester). Halfway notification 23:25; finished 23:46 after 44 min (estimate 46), Finished notification sent. Camera watcher: first start stopped at once (its 00:30 time limit was read as already past at 23:00; fixed), restarted, about 160 OK answers, no alerts.
+- Result: on camera, all three parts complete: the nut's dome round and smooth, the cap's scales crisp, the fit tester complete; nothing lifted. The plate was taken off within a minute of finishing, so the record photo is the watcher's frame a few seconds before the end. Fit of the switch, the cap's socket and the snap-off column not yet reported.
+- What worked: the clean orange PETG settings again; the nut upside down for a smooth round bottom with no supports; the cap rim down with its own snap-off column (no slicer supports); arranging all three on one plate; the automatic preview and all three notifications.
+- What did not: the watcher's time limit across midnight (fixed in `watch_print.sh`); no photo on the plate after the end (the plate came off first)
+- Photos, recording, logs: `prints/records/acorn_clicker_first_layer_phone1.jpg`, `prints/records/acorn_clicker_halfway_phone1.jpg`, `prints/records/acorn_clicker_finished_phone1.jpg`, `prints/records/watch_20261121-2301.log`, recorder "Acorn clicker - orange PETG"

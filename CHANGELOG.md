@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Acorn clicker and a cancelled print written down
+
+- TIMELINE.md, PRINT-LOG.md: the cancelled "checklist-tests-21nov" print and the acorn clicker. FILAMENTS.md: the acorn as another clean print with orange PETG's settings.
+- Watcher (`watch_print.sh` in the owner's folder): a stop time earlier than the start time now means the next day; before, a watcher started at 23:00 with 00:30 stopped at once.
+- Recorder: the Finished notification is now sent even when the finished screen is cleared before the recorder looks (it remembers the highest progress seen).
+
 ## 2026-11-21 — MX keycap + socket: 4.15 × 1.35 was a little loose
 
 - TIMELINE.md (switch button entry) and FILAMENTS.md (orange PETG note): the keycap's + socket printed exactly at its designed 4.15 × 1.35 mm and sat a little loose on the switch's stem; later designs use 4.10 × 1.30 mm, with a small fit tester (4.00 / 4.05 / 4.10) on the next print to confirm.
