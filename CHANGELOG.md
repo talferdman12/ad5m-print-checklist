@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Exact send address; "Started" notification
+
+- README.md: the sending rule and step 35 now give the exact address, `http://192.168.68.10:8898/uploadGcode`, and name the printer's own address (192.168.68.52) as the one never to use. Step 35 also checks the new "Started" notification. The camera rule describes it.
+- Recorder: sends a "Started" notification for every print, whoever started it, saying whether the recording is on and whether there is a 3D preview ("NO 3D preview" means the wrong address was used).
+- Reason: the owner asked for the checklist to say exactly where to send, and got no notification when puck_low2_test started (the recorder only sent halfway and finished ones; start pushes had come from a watcher that was not running).
+
 ## 2026-11-21 — Prints sent straight to the printer
 
 - README.md: the rule about sending through the recorder now says to set 192.168.68.10 once in every slicer on every computer (including other people's) and look at it before each send. Step 35 ("Send the print over the network to the recorder's printer address") now says what to do when the 3D Printer tab says the print was sent straight to the printer. New practical note "Prints sent straight to the printer": how to give the recorder the file afterwards.
