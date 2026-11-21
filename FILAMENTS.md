@@ -25,6 +25,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 
 - **Silk PLA tri-colour (4):** the colour shifts along the spool, so a print changes colour by itself. Shinier when the outer walls are printed slowly.
 - **Neon green PLA (7):** starved and jammed at 205 °C; a file from the previous owner printed it perfectly at 220 °C. Use 220 °C until a temperature test says otherwise (open issue 8).
+- **Orange PETG (9):** prints clean at 240 °C with a blended seam and wipe at the end of each loop, no brim on small flat-faced parts. At 245 °C with a brim, the first layer's edge came out lumpy.
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
 - **Cardboard spools (1, 2):** can shed a little dust; wipe the rims if any shows.

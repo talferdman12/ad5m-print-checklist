@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — PETG: no brim on flat-faced small parts, blended seam
+
+- README.md: step 25 ("Check every part touching the plate") no longer adds a brim to a small PETG part that sits on one whole, solid flat face. Step 23 ("Place the seam at the back") blends the seam and wipes at the end of each loop for PETG.
+- FILAMENTS.md: note for orange PETG (9): 240 °C. PRINT-LOG.md: two keycap prints. IMPROVING.md: the lesson.
+- Reason: the first orange PETG keycap (245 °C, 4 mm brim) had a lumpy first-layer edge; the reprint at 240 °C, with no brim and a blended seam, came out clean.
+
 ## 2026-11-21 — Every print goes through the recorder; 3D preview of the print file
 
 - README.md: new rule in "Rules to know before starting": every print, from any computer, session or person, is sent to the recorder's printer address (192.168.68.10, port 8898), which passes it to the printer unchanged and keeps a 3D preview. Step 35 ("Send the print over the network") sends there, never straight to the printer, and checks the Home Assistant 3D Printer tab shows the file. The background notes describe the 3D preview of the file printing now (the print file, not the design).
