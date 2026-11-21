@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Orange PETG: failed vs clean settings side by side
+
+- FILAMENTS.md: the orange PETG (9) note is now a table of the failed and the clean settings, marking the three that changed (240 °C, no brim, blended seam with a wipe), and what the failure looked like. PRINT-LOG.md: the failed row now describes the owner's close-up photo.
+- Reason: so the next print with this spool starts from the settings that worked, and a future failure can be compared against them.
+
 ## 2026-11-21 — PETG: no brim on flat-faced small parts, blended seam
 
 - README.md: step 25 ("Check every part touching the plate") no longer adds a brim to a small PETG part that sits on one whole, solid flat face. Step 23 ("Place the seam at the back") blends the seam and wipes at the end of each loop for PETG.

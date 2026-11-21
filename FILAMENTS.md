@@ -25,7 +25,19 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 
 - **Silk PLA tri-colour (4):** the colour shifts along the spool, so a print changes colour by itself. Shinier when the outer walls are printed slowly.
 - **Neon green PLA (7):** starved and jammed at 205 °C; a file from the previous owner printed it perfectly at 220 °C. Use 220 °C until a temperature test says otherwise (open issue 8).
-- **Orange PETG (9):** prints clean at 240 °C with a blended seam and wipe at the end of each loop, no brim on small flat-faced parts. At 245 °C with a brim, the first layer's edge came out lumpy.
+- **Orange PETG (9):** use the settings that printed clean. Only the first three rows changed between the failed try and the clean one; everything else was the same.
+
+  | Setting | Failed try (keycap, 2026-11-21) | Clean (switch button, 2026-11-21) |
+  |---|---|---|
+  | Nozzle, first layer and rest | 245 °C | **240 °C** |
+  | Brim | 4 mm, 0.1 mm gap | **none** (part sits on a whole flat face) |
+  | Seam | at the back, plain | at the back, **blended (scarf) seam, wipe at the end of each loop** |
+  | Bed | 75 °C | 75 °C |
+  | Fan | 30–50 % | 30–50 % |
+  | Speeds | first layer 30 mm/s, outer walls 60, everything else 100 or less, acceleration 4000 | same |
+  | Layer height, walls | 0.20 mm, 3 walls | same |
+
+  What the failed try looked like: a blob of PETG pulled off the nozzle and smeared onto the right side of the brim, with a string trailing from it; a bump where the seam started at the front; a thin string across the part. These are signs of PETG gathering on a too-hot nozzle and being dropped at the seam, which is what the three changes fix.
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
 - **Cardboard spools (1, 2):** can shed a little dust; wipe the rims if any shows.
