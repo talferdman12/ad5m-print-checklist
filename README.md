@@ -29,6 +29,13 @@ For anyone printing on this printer, person or AI, on any computer. Everything b
 6. The 3D view appears on the Home Assistant tab by itself, and phone notifications go out by themselves when the print starts, at halfway and when it ends. Watch the first layer on camera.
 7. When it ends: take a picture before anything comes off the plate, stop the recording on the recorder page and mark how it went, then write the print down (TIMELINE.md, PRINT-LOG.md, FILAMENTS.md, OPEN-ISSUES.md for anything that went wrong).
 
+**Phone notifications to the owner: automatic, three for every print.** The owner gets a push (through ntfy, each with a picture from phone 1; tapping it opens the Home Assistant "3D Printer" tab):
+1. **Started**: within about a minute of the print starting. It also says whether the recording is on and whether the print has a 3D view.
+2. **Halfway**: at 50 %, with the expected finish time.
+3. **Finished**, **Cancelled** or **Ended with an error**: when the print stops, however it stops.
+
+The recorder sends these by reading the printer itself, so they go out for every print, from any computer, person or slicer, with or without this checklist, and even for a print started from a USB stick or the printer's screen. Nobody has to switch them on. Whoever runs the print still checks each one arrived (steps 35, 40 and 43 below) and sends it themselves if it did not.
+
 **Avoid:** printing from a USB stick or starting a file from the printer's own screen. It works, but there is no 3D view and no copy of the file, so settings get lost; if it has to be done, write the print down anyway. If the printer cannot be reached, check the computer is on the home Wi-Fi (an address starting 192.168.68 to 192.168.71), not a phone hotspot.
 
 ## The golden rules
@@ -125,7 +132,7 @@ When the agent is ready (step 32), it sends the person at the printer one messag
 ## Stage 5 — Sending and watching the start
 
 34. Start the recording on the recorder, giving the model's name and the estimated print time from step 29. Check that it now says it is recording and that both camera pictures show the printer. As a safety net it stops by itself one hour after the estimated time, so use the real estimate. If the recorder cannot be reached, do not start the print; tell the person and wait until it is back.
-35. Send the print over the network to the printer, with "print now" on and "leveling before print" off for this print, and tell the person it is starting.
+35. Send the print over the network to the printer, with "print now" on and "leveling before print" off for this print, and tell the person it is starting. Within about a minute, check that the "Started" notification was sent (the recorder's log shows it); if it was not, send the owner one yourself with a fresh picture.
 36. While it heats and homes, check the printer's reported nozzle temperature stays at or below 140 °C while it homes and measures the bed, and only rises once the nozzle is raised next to the purge area. If it heats to full temperature early, stop the print.
 37. Watch the purge line on camera: it should be smooth, unbroken and the right colour. This is also the dryness check: if the plastic steams, bubbles or comes out rough and pitted, stop the print, and mark the spool "dry before printing" in FILAMENTS.md.
 38. Watch the purge line and the entire first layer on camera, about the first three to five minutes, with fresh pictures from both cameras at least every 30 seconds. A good first layer is flat, slightly squashed, with lines touching each other and stuck firmly to the plate.

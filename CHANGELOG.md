@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — The three phone notifications, in one place
+
+- README.md: the "Start here" guide now lists the owner's three automatic notifications (Started, Halfway, Finished / Cancelled / Ended with an error), says they go out for every print however it was started, and step 35 checks that the Started one arrived, like the existing checks for the other two.
+- Reason: the owner asked that the checklist make clear all three go out for every print, from anywhere.
+
 ## 2026-11-21 — "Start here: how to use this printer"
 
 - README.md: new section at the top for anyone printing (person or AI, any computer): the printer's address (192.168.68.52), which network-search entry to pick and which never to pick, the recorder and Home Assistant addresses, printing in seven short steps with an example send command, and what to avoid.
