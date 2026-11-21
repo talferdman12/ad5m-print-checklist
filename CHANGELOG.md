@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — MX keycap + socket: 4.15 × 1.35 was a little loose
+
+- TIMELINE.md (switch button entry) and FILAMENTS.md (orange PETG note): the keycap's + socket printed exactly at its designed 4.15 × 1.35 mm and sat a little loose on the switch's stem; later designs use 4.10 × 1.30 mm, with a small fit tester (4.00 / 4.05 / 4.10) on the next print to confirm.
+- Reason: the owner reported the loose fit and asked for it to fit well without being too small.
+
 ## 2026-11-21 — The three phone notifications, in one place
 
 - README.md: the "Start here" guide now lists the owner's three automatic notifications (Started, Halfway, Finished / Cancelled / Ended with an error), says they go out for every print however it was started, and step 35 checks that the Started one arrived, like the existing checks for the other two.

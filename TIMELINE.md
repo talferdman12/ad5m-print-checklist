@@ -255,9 +255,9 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - Settings: 240 °C first layer and rest, bed 75 °C, 0.20 mm, no brim, seam at the back blended (scarf seam on outer walls) with a wipe at the end of each loop, same slowed speeds and fan as before; profiles "0.20mm Small Part PETG @AD5M" and "Orange PETG Slic3D (AD5M)"
 - Changed since the last print with this spool: 245 → 240 °C, brim removed, blended seam and wipe added; base printed as well as the keycap
 - What happened: purge, first layer and every layer clean on camera; halfway and finished phone notifications sent. Phone 2 was offline, so only phone 1 watched and recorded.
-- Result: both parts square with smooth edges, no blobs or strings; 19 minutes, 6 g. Fit on a real switch not yet tried.
+- Result: both parts square with smooth edges, no blobs or strings; 19 minutes, 6 g. Fit (owner, that evening): the keycap's + socket was a little too big, so the cap sat loose on the switch's stem. The print file shows it printed exactly as designed (4.15 × 1.35 mm), so the design was too generous; later designs use 4.10 × 1.30 mm.
 - What worked: 240 °C, no brim on parts sitting on a whole flat face, blended seam with a wipe
-- What did not: nothing seen
+- What did not: the + socket at 4.15 × 1.35 mm was a little loose on the stem
 - Photos, recording, logs: `prints/records/switch_button_orange_finished_phone1.jpg`, `prints/records/watch_20261121-1154.log`, recorder "Switch button plain orange PETG"
 
 ### 2026-11-21 15:12–16:54 — Puck Low 2 test: seven-part puck (round case, body with lid and latch, toothed disc, flat parts), "fast" — OK
