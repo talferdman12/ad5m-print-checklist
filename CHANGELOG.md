@@ -2,6 +2,13 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Every print written down: golden rule 7 and TIMELINE.md
+
+- README.md: new golden rule 7, "Every print is written down, the good and the bad", including cancelled prints, prints from other computers or people and prints started from the printer's screen. Step 46 ("Write the print down") now writes a full TIMELINE.md entry, a PRINT-LOG.md row and the spool's FILAMENTS.md note (settings that worked and settings that caused a defect). Step 47 also keeps what worked better. Before choosing settings, read the chosen spool's note and its TIMELINE.md entries.
+- TIMELINE.md: new, the full text record of every print, oldest first, with a template. Back-filled for every print so far from PRINT-LOG.md, the recorder's list, print files, photos, watcher logs and session transcripts; unknowns say "not recorded".
+- PRINT-LOG.md: added nine prints that were missing (spinner caps v2, fractal star, grinder, spire garden test, the previous owner's dragon bubble, four Puck Low prints). FILAMENTS.md: orange PETG (9) marked opened.
+- Reason: the owner asked for what worked and what didn't to always be kept, in one timeline. Nine prints had never been logged, and the settings of the orange PETG print that worked overnight were lost, so the next orange print started from a guess.
+
 ## 2026-11-21 — Orange PETG: failed vs clean settings side by side
 
 - FILAMENTS.md: the orange PETG (9) note is now a table of the failed and the clean settings, marking the three that changed (240 °C, no brim, blended seam with a wipe), and what the failure looked like. PRINT-LOG.md: the failed row now describes the owner's close-up photo.

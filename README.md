@@ -14,8 +14,9 @@ This file is only for printing. How the checklist is tested, changed and improve
 4. **No defect is cosmetic.** Every blob, string, hook, gap, lifted corner or rough surface that is seen is written down in OPEN-ISSUES.md, with what it looked like and the settings in use. Small defects are early warnings of bigger failures.
 5. **Stop after any failure.** If a print fails or shows a new defect, the next print may only be one that helps find the cause. Normal printing resumes only when the root cause is found and this checklist has been changed to prevent it, following IMPROVING.md. Writing the problem down is not the same as fixing it.
 6. **One green light, nothing more.** The agent asks the person at the printer for exactly one thing per print: the green light. Everything else it finds out itself, from the cameras, the printer's status, the sliced file and the files in this repository. If something can only be fixed by hand (a tangle, a jam, a part knocked loose, a printer that has dropped off the network), the agent stops or pauses the print if it can and tells the person what happened; that is an alert, not a step.
+7. **Every print is written down, the good and the bad.** Every print gets a full entry in TIMELINE.md and a row in PRINT-LOG.md the same day. That includes prints that are cancelled or fail in the first minute, prints from any computer, session or person, and prints started from the printer's own screen. What worked is written where the next print will find it: the spool's note in FILAMENTS.md and, when it applies to every print, this checklist. What went wrong goes into OPEN-ISSUES.md. A print that is not written down teaches nothing.
 
-Before step 1, read OPEN-ISSUES.md and the last few rows of PRINT-LOG.md in this repository, so you know what is still being worked on and how recent prints went.
+Before step 1, read OPEN-ISSUES.md and the last few rows of PRINT-LOG.md in this repository, so you know what is still being worked on and how recent prints went. When the filament is chosen (step 8), also read that spool's note in FILAMENTS.md and its entries in TIMELINE.md, and start from the settings that last printed well with it.
 
 If you find you did a step out of order, or relied on an old answer, go back to that step, redo it and everything after it, and discard anything prepared in between.
 
@@ -116,8 +117,11 @@ When the agent is ready (step 32), it sends the person at the printer one messag
 43. Before anything is taken off the plate, take a picture of the finished print from both cameras and keep it with the print record. Check that the finished notification with a picture was sent (the recorder's log shows it); if it was not, send one yourself with the picture. Raise the bed towards phone 1 for a closer look if needed.
 44. Clear the printer's "print completed" screen over the network, and switch the nozzle heater off.
 45. Tell the person the print is done, how it looks on camera, and that the plate can cool for a few minutes and then be flexed to release the print (never a scraper). If the print is a test or calibration whose result still has to be read, also tell them to keep every part until the result has been read and written into this checklist; this is information for them, not a step to confirm.
-46. Add a row to PRINT-LOG.md: date, what was printed, filament, what changed since the last print, the result, and where the photos and recording are. Update FILAMENTS.md if the spool's state changed (opened for the first time, used up, or now left out on the printer).
-47. If anything went wrong, add it to OPEN-ISSUES.md, then find the cause and change this checklist as described in IMPROVING.md, so it never happens again.
+46. Write the print down (golden rule 7, "Every print is written down"):
+    - **TIMELINE.md:** a full entry at the bottom, with the fields its template lists: when it started and ended, what was printed and the file, the spool, the exact settings (temperatures, bed, layer height, brim, seam, speeds, fan, profiles), what changed since the last print with this spool, what happened in order and who stopped it, the result, what worked, what did not, and where the photos, recording and logs are.
+    - **PRINT-LOG.md:** one summary row.
+    - **FILAMENTS.md:** the spool's note gets the settings that printed well with it, and any setting that caused a defect. Also update it if the spool's state changed (opened for the first time, used up, or now left out on the printer).
+47. If anything went wrong, add it to OPEN-ISSUES.md, then find the cause and change this checklist as described in IMPROVING.md, so it never happens again. If something worked better than before (a temperature, a seam setting, no brim), write it into the spool's note and, if it applies to every print, into this checklist, so the next print starts from it.
 
 ---
 
@@ -156,6 +160,8 @@ When a material is tested and better values are found, update this table.
 ---
 
 ## Doing it on this printer (practical notes for a new agent)
+
+- To catch prints nobody wrote down, list the recorder's recordings: each has its start and end time and how it ended. Compare with TIMELINE.md and add any that are missing (golden rule 7).
 
 - **Finding the printer:** it is on the home Wi-Fi and calls itself "AD5M - read checklist first" in network discovery. Its address can change; search for it rather than relying on an old address. Its serial number is shown in its discovery reply and on its screen.
 - **Sending without the printer's own leveling:** OrcaSlicer's built-in "send to Flashforge" turned the printer's own leveling on in testing, which breaks step 13 (nozzle at or below 140 °C while the bed is measured). Send through the printer's network interface instead with "print now" on and "leveling before print" off.

@@ -5,6 +5,7 @@ The print checklist (README.md) is for anyone printing. This file is for whoever
 The supporting files:
 - **OPEN-ISSUES.md** — problems seen and not yet proven fixed.
 - **PRINT-LOG.md** — one row per print, with what changed and the result.
+- **TIMELINE.md** — the full text record of every print, oldest first: exact settings, what happened, what worked and what did not.
 - **CHANGELOG.md** — every change to the checklist and the reason for it.
 - **start-code.gcode** — the tested start of every print.
 - **FILAMENTS.md** — every spool on hand; updated whenever a spool is bought, opened or used up.

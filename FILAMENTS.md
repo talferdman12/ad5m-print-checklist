@@ -18,7 +18,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 | 6 | PETG | PETG | Black | Keytek | 1 kg | 230–250 °C | — | Opened |
 | 7 | PLA (basic) | PLA | Neon green | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Opened 2026-11-20; prints at 220 °C, not 205 |
 | 8 | PLA (basic) | PLA Marble | Grey speckled stone | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
-| 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Boxed (bought 2026-11-20) |
+| 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-21 (first used for the Puck Low accents) |
 | 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
 
 ## Notes on particular spools
