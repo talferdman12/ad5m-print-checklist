@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Prints sent straight to the printer
+
+- README.md: the rule about sending through the recorder now says to set 192.168.68.10 once in every slicer on every computer (including other people's) and look at it before each send. Step 35 ("Send the print over the network to the recorder's printer address") now says what to do when the 3D Printer tab says the print was sent straight to the printer. New practical note "Prints sent straight to the printer": how to give the recorder the file afterwards.
+- OPEN-ISSUES.md: issue 10.
+- Reason: puck_low2_test.gcode was sent straight to the printer from outside the checklist, so the tab had no 3D preview; the owner asked for it to be fixed in the checklist. The owner's own OrcaSlicer also still had an old printer address (now a phone camera's).
+
 ## 2026-11-21 — Every print written down: golden rule 7 and TIMELINE.md
 
 - README.md: new golden rule 7, "Every print is written down, the good and the bad", including cancelled prints, prints from other computers or people and prints started from the printer's screen. Step 46 ("Write the print down") now writes a full TIMELINE.md entry, a PRINT-LOG.md row and the spool's FILAMENTS.md note (settings that worked and settings that caused a defect). Step 47 also keeps what worked better. Before choosing settings, read the chosen spool's note and its TIMELINE.md entries.
