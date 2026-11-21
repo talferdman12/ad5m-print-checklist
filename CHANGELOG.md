@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — "Start here: how to use this printer"
+
+- README.md: new section at the top for anyone printing (person or AI, any computer): the printer's address (192.168.68.52), which network-search entry to pick and which never to pick, the recorder and Home Assistant addresses, printing in seven short steps with an example send command, and what to avoid.
+- Reason: the owner asked that everybody know exactly how to use this printer. A print from outside the checklist went to the wrong place earlier the same day.
+
 ## 2026-11-21 — Automatic 3D preview for every print
 
 - The recorder now answers at the printer's address, 192.168.68.52, on everything a slicer uses (file sending, the control port and the network search), and passes it all to the printer unchanged. The printer moved to 192.168.68.152 and was renamed "AD5M direct - no 3D preview". Any file sent to the printer's usual address, by anyone, gets a 3D preview automatically.

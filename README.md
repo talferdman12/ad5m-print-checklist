@@ -6,6 +6,31 @@ The checklist is run by **the agent**: whoever prepares the file and runs the pr
 
 This file is only for printing. How the checklist is tested, changed and improved is in IMPROVING.md.
 
+## Start here: how to use this printer
+
+For anyone printing on this printer, person or AI, on any computer. Everything below works from the home network with no login.
+
+**The addresses**
+
+| What | Address |
+|---|---|
+| The printer: send prints and commands here, always | **192.168.68.52** (network port 8898 for files and pause/cancel, 8899 for status and G-code). Serial number SNMQLF9305680; leave the "check code" empty. |
+| In a slicer's printer search | pick **"AD5M - read checklist first"** (that is 192.168.68.52). Never pick "AD5M direct - no 3D preview" (192.168.68.152): it is the same printer, but prints sent there get no 3D view. |
+| Recorder (cameras, recordings) | http://192.168.68.10:8790 |
+| Watching a print | Home Assistant, "3D Printer" tab: status, both cameras, and the print in 3D with a layer slider |
+
+**Printing, in short.** The numbered steps below are the real list; this is what they come to.
+1. Before anything else, read OPEN-ISSUES.md and the last rows of PRINT-LOG.md, then the chosen spool's note in FILAMENTS.md and its TIMELINE.md entries.
+2. Slice with the settings this checklist gives (start code from `start-code.gcode`, temperatures from the Material Table).
+3. Ask the person at the printer for the green light. That is the only thing they are asked.
+4. Start the recording on the recorder page (button "Start recording", with the model's name and the expected hours).
+5. Send the file to 192.168.68.52 with "print now" on and "leveling before print" off. Do not use the slicer's own "send to printer" button: it switches the printer's own leveling on (see the practical notes). For example, from a terminal:
+   `curl -H "Expect:" -H "serialNumber: SNMQLF9305680" -H "checkCode: " -H "fileSize: <bytes>" -H "printNow: true" -H "levelingBeforePrint: false" -F "gcodeFile=@file.gcode" http://192.168.68.52:8898/uploadGcode`
+6. The 3D view appears on the Home Assistant tab by itself, and phone notifications go out by themselves when the print starts, at halfway and when it ends. Watch the first layer on camera.
+7. When it ends: take a picture before anything comes off the plate, stop the recording on the recorder page and mark how it went, then write the print down (TIMELINE.md, PRINT-LOG.md, FILAMENTS.md, OPEN-ISSUES.md for anything that went wrong).
+
+**Avoid:** printing from a USB stick or starting a file from the printer's own screen. It works, but there is no 3D view and no copy of the file, so settings get lost; if it has to be done, write the print down anyway. If the printer cannot be reached, check the computer is on the home Wi-Fi (an address starting 192.168.68 to 192.168.71), not a phone hotspot.
+
 ## The golden rules
 
 1. **Every step, every print.** This is a pre-flight checklist. Every single step below must be done again for every single print, even if the print before it was five minutes ago.
