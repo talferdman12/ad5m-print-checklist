@@ -43,6 +43,8 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 
   Also printed clean with these exact settings: the acorn clicker (2026-11-21, 44 min, 13 g): a 30 mm round dome printed upside down with no supports, and a scaly cap printed rim down with its own snap-off column under a hanging stem.
 
+  Also clean with these settings on a big 9-part plate (fidget cube + 52 mm acorn, 2026-11-22, 3 h 22 min, 68 g).
+
   What the failed try looked like: a blob of PETG pulled off the nozzle and smeared onto the right side of the brim, with a string trailing from it; a bump where the seam started at the front; a thin string across the part. These are signs of PETG gathering on a too-hot nozzle and being dropped at the seam, which is what the three changes fix.
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
