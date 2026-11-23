@@ -14,6 +14,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Confirmed fixed:** the backwards wipe over the purge line keeps the nozzle clean; no curl reached the nozzle or the print.
 - **Next step:** test a larger pull-back before heating (about 2.5 mm, pushed back by the same amount before the purge). Only change the start code if the curl gets smaller and nothing else gets worse.
 
+- 2026-11-23: the cold-nozzle check before the clicker test showed a ~4 cm orange string hanging from the tip after cooling from the 190 °C cleaning temperature. The owner chose to start without pulling it off (print cancelled for another reason before the purge, so the effect is unknown).
+
 ## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
 - **Change made (2026-11-20):** start code now measures a 3 × 3 grid instead of the full grid, at the owner's request.

@@ -322,3 +322,14 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - What worked: one-piece honeycomb shell with no seams; designed cradle instead of slicer supports; slowed overhangs; predicted stringing was mild
 - What did not: the camera watcher (two false pauses on a honeycomb part)
 - Photos, recording, logs: `prints/records/tennis_ball_firm_finished_phone1.jpg` (brightened crop), `prints/records/tennis_ball_firm_finished_phone1_zoom.jpg`, `prints/records/watch_20261122-2039.log`, `watch_20261122-2256.log`, recorder "Honeycomb tennis ball firm - orange PETG"
+
+### 2026-11-23 19:59–20:01 — C KIDS key clicker test (housing, keycap, five loose logo pieces) — cancelled
+- File: `keyclicker_test_orange_petg.gcode` (sliced here)
+- Spool: 9, Orange PETG (Slic3D)
+- Settings: nozzle 240 / 240 °C, bed 75 °C, layer 0.20 mm, no brim, seam at the back blended with a wipe, small-part speeds (first layer 30, outer walls 60, rest 100 or less, acceleration 4000), fan 30–50 %; profiles "0.20mm Small Part PETG @AD5M" / "Orange PETG Slic3D (AD5M)". 111 layers, 9.4 g, estimate 29 min.
+- Changed since the last print with this spool: first clicker keychain; the logo was five loose inlay pieces (C, K, I, D, S) to glue into pockets in the cap.
+- What happened: before the start, the cold-nozzle camera check showed a thin orange string, about 4 cm, hanging from the tip. The owner said to start anyway (the purge line should take it). Recording started 19:59:01 (phone 1 only: phone 2 not answering), print sent 19:59:07. During heating and bed measuring the owner asked to stop: the logo should be part of the keycap, not separate pieces. Cancelled over the network at about 20:01, before any plastic came out.
+- Result: nothing printed; plate clean on camera at 20:05.
+- What worked: cancel over the network during bed measuring was clean; "clear platform" brought the printer back to READY.
+- What did not: the design wasn't what the owner wanted (loose logo pieces). Phone 2 still unreachable.
+- Photos, recording, logs: `/tmp/printcam/phone1-195820.jpg` (string on the tip), `/tmp/printcam/phone1-200535.jpg` (clean plate after cancel); recording 20261123-195900_C-KIDS-key-clicker-test-orange-PETG (cancelled).
