@@ -18,7 +18,7 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 
 - 2026-11-23 (key clicker test v2): fine strings between two small parts 3 mm apart and small ooze curls flicked onto the plate during the print, at 240 °C with the clean orange settings. Parts not affected. A string also hung from the tip again after cooling. Next: try 235 °C or a little more retraction on two-part plates, and space small parts further apart.
 
-- 2026-11-23 (key clicker v3): 235 °C, 1.0 mm retraction and avoid crossing walls did not reduce the stringing; strings at the housing's keyring tab and between the parts, curls on the plate. Likely cause: orange PETG damp after ~2½ days open on the printer (string on the cold nozzle every time). Spool marked dry before printing. Next: dry it, reprint with the clean settings, and see whether the strings go.
+- 2026-11-23 (key clicker v3): 235 °C, 1.0 mm retraction and avoid crossing walls did not reduce the stringing; strings at the housing's keyring tab and between the parts, curls on the plate. Cause found in the G-code: a lone + post on a one-line ring footprint (knocked loose, became spaghetti) and two parts printed together (hops between them every layer). Not the spool. Next print: snap-off column under the post, one part at a time, clean settings (240 °C, 0.8 mm).
 
 ## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
