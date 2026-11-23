@@ -16,6 +16,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 
 - 2026-11-23: the cold-nozzle check before the clicker test showed a ~4 cm orange string hanging from the tip after cooling from the 190 °C cleaning temperature. The owner chose to start without pulling it off (print cancelled for another reason before the purge, so the effect is unknown).
 
+- 2026-11-23 (key clicker test v2): fine strings between two small parts 3 mm apart and small ooze curls flicked onto the plate during the print, at 240 °C with the clean orange settings. Parts not affected. A string also hung from the tip again after cooling. Next: try 235 °C or a little more retraction on two-part plates, and space small parts further apart.
+
 ## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
 - **Change made (2026-11-20):** start code now measures a 3 × 3 grid instead of the full grid, at the owner's request.
