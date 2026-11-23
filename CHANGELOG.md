@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-24 — Planned colour swap (practical note)
+
+- README.md practical notes: how a planned colour swap is done (same material for both spools; everything prints together up to the swap; park at the front and pause; purge on a sacrificial block after resuming; the new colour one part at a time; simulate the file before sending).
+- Reason: the owner asked for a plate of C KIDS keycaps in white PETG with the logo in red, swapped mid-print. Red exists only in PLA, which does not bond to PETG, so the print waits for red PETG; the file is ready (`prints/keycaps_ckids_plate_white_red_petg.gcode`). The checklist had no procedure for a swap.
+- OPEN-ISSUES.md issue 2: the start code's 0.8 mm retract after the purge wipe is never pushed back, so the first line of every print (usually brim) starts about 2 cm thin. Found by simulating the keycap plate file. Harmless so far; not changed.
+
 ## 2026-11-21 — Acorn clicker and a cancelled print written down
 
 - TIMELINE.md, PRINT-LOG.md: the cancelled "checklist-tests-21nov" print and the acorn clicker. FILAMENTS.md: the acorn as another clean print with orange PETG's settings.

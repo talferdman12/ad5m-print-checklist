@@ -24,6 +24,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 
 - 2026-11-23 (key clicker v5): printed one part at a time with a 4 mm brim at the clean settings: no strings, keycap held. Supports the cause above (hops between parts). Still to check in hand: the + post on its snap-off column and the switch fit.
 
+- 2026-11-24 (found while simulating the keycap plate file, not on a print): the start code pulls the filament back 0.8 mm before its backwards wipe and never pushes it back; the slicer's own pull-back and push-back cancel each other. So the first line of every print (usually the brim) starts with about 0.8 mm of filament missing, roughly 2 cm of thin line. Harmless on a brim. If a first line ever starts with a gap that matters, add "push the filament forward 0.8 mm" after the lift at the end of the start code.
+
 ## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
 - **Change made (2026-11-20):** start code now measures a 3 × 3 grid instead of the full grid, at the owner's request.
