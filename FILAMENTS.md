@@ -18,7 +18,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 | 6 | PETG | PETG | Black | Keytek | 1 kg | 230–250 °C | — | Opened |
 | 7 | PLA (basic) | PLA | Neon green | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Opened 2026-11-20; prints at 220 °C, not 205 |
 | 8 | PLA (basic) | PLA Marble | Grey speckled stone | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
-| 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-21 (first used for the Puck Low accents) |
+| 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-21 (first used for the Puck Low accents); left on the printer since; **dry before printing** (stringy on 2026-11-23) |
 | 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
 
 ## Notes on particular spools
@@ -47,7 +47,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 
   Also clean with these settings on a big 9-part plate (fidget cube + 52 mm acorn, 2026-11-22, 3 h 22 min, 68 g).
 
-  Key clicker test (2026-11-23, 28 min, 9.3 g): housing and keycap clean, a 1.0 mm raised logo with 1.2 mm letter strokes printed on the cap top. With two small parts side by side these settings left fine strings between them and flicked small ooze curls onto the plate; the parts themselves were clean.
+  Key clicker test (2026-11-23, 28 min, 9.3 g): housing and keycap clean, a 1.0 mm raised logo with 1.2 mm letter strokes printed on the cap top. With two small parts side by side these settings left fine strings between them and flicked small ooze curls onto the plate; the parts themselves were clean. The next try (v3) at 235 °C with 1.0 mm retraction and avoid crossing walls was no better: strings at the keyring tab and between the parts. After about 2½ days open on the printer this spool strings and leaves a string hanging from the nozzle every time it cools; dry it (65 °C, 8 h) and store it sealed before the next print, then start again from the clean settings.
 
   What the failed try looked like: a blob of PETG pulled off the nozzle and smeared onto the right side of the brim, with a string trailing from it; a bump where the seam started at the front; a thin string across the part. These are signs of PETG gathering on a too-hot nozzle and being dropped at the seam, which is what the three changes fix.
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
