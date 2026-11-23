@@ -22,6 +22,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 
 - 2026-11-23 (key clicker v4): the keycap, printed on its own with no brim, came off the plate at layer 5 and stuck to the nozzle. Its footprint is a thin wall ring, so step 25 required a 4 mm brim; the spool note's "no brim" (for parts on a solid face) was wrongly carried over. Next print: 4 mm brim, glue stick on both part spots.
 
+- 2026-11-23 (key clicker v5): printed one part at a time with a 4 mm brim at the clean settings: no strings, keycap held. Supports the cause above (hops between parts). Still to check in hand: the + post on its snap-off column and the switch fit.
+
 ## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
 - **Change made (2026-11-20):** start code now measures a 3 × 3 grid instead of the full grid, at the owner's request.

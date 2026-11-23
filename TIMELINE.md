@@ -366,3 +366,14 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - What worked: the column and the one-at-a-time order sliced as intended (checked layer by layer).
 - What did not: the keycap let go of the plate. Its footprint is only the 1.5 mm wall ring and the 8.4 mm foot, and it had no brim: checklist step 25 calls for a 4 mm brim on any footprint under 30 × 30 mm unless the PETG part sits on one whole solid face, which this ring does not. The "no brim" in the clean orange settings came from parts on a solid face and should not have been applied here. Printing one at a time also put it 5 cm left of the centre, likely outside the glue stick. In v2 and v3 the same ring held, but only just.
 - Photos, recording, logs: `prints/records/keyclicker_v4_tangle_phone1.jpg`, `prints/records/keyclicker_v4_failed_phone1.jpg`; recording 20261123-215328_C-KIDS-key-clicker-v4-orange-PETG-one-at-a-time (failed).
+
+### 2026-11-23 22:05–22:39 — C KIDS key clicker v5 (snap-off column, one part at a time, 4 mm brim) — OK
+- File: `keyclicker_orange_petg_v5.gcode` (sliced here)
+- Spool: 9, Orange PETG (Slic3D)
+- Settings: 240 °C first layer and rest, bed 75 °C, 0.20 mm, small-part speeds, retraction 0.8, blended seam with a wipe, fan 30–50 %, 4 mm outer brim with a 0.1 mm gap, print sequence by object (keycap first at about X −53, housing second at about X +47); profiles "0.20mm Small Part PETG one at a time brim @AD5M" / "Orange PETG Slic3D (AD5M)". 159 layers, 9.9 g, estimate 30 min 48 s.
+- Changed since the last print with this spool: 4 mm brim (v4 let go without one); glue stick on both part spots.
+- What happened: the nozzle tip was clean on the cold check. Recording 22:05:03, sent 22:05:04, Started push 22:05:23. Nozzle about 140 °C through bed measuring. Keycap held on its brim through layer 5 (where v4 let go) and printed with no strings; housing followed. Halfway push 22:25:39. Finished 22:39 (31 min); Finished push 22:39:20.
+- Result: both parts complete and clean on camera, no strings between the parts or on the plate, keycap with the raised C KIDS. Post, fit and logo detail to be checked in hand (pull the snap-off column out of the keycap first).
+- What worked: printing one part at a time removed the strings that v2 and v3 had (same spool, same 240 °C), which confirms the hops between parts were the cause, not moisture; the 4 mm brim held the ring-footed keycap.
+- What did not: nothing seen on camera.
+- Photos, recording, logs: `prints/records/keyclicker_v5_finished_phone1.jpg`, `prints/records/keyclicker_v5_finished_zoom.jpg`; recording 20261123-220503_C-KIDS-key-clicker-v5-orange-PETG-brim-one-at-a-time (OK).
