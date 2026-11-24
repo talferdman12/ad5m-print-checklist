@@ -26,6 +26,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 
 - 2026-11-24 (found while simulating the keycap plate file, not on a print): the start code pulls the filament back 0.8 mm before its backwards wipe and never pushes it back; the slicer's own pull-back and push-back cancel each other. So the first line of every print (usually the brim) starts with about 0.8 mm of filament missing, roughly 2 cm of thin line. Harmless on a brim. If a first line ever starts with a gap that matters, add "push the filament forward 0.8 mm" after the lift at the end of the start code.
 
+- 2026-11-24 (white PETG #5, keycap test): again a small curl on the tip after heating to 190 °C for brushing; the owner started anyway (print cancelled for another reason, so the effect is unknown).
+
 ## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
 - **Change made (2026-11-20):** start code now measures a 3 × 3 grid instead of the full grid, at the owner's request.
@@ -72,3 +74,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Seen (2026-11-22, honeycomb tennis ball):** two false pauses. 22:56: Haiku answered "OK, PROBLEM: ... nothing is wrong" and the parser counts PROBLEM anywhere in the answer. 23:04: it read the closing top of the ball (nozzle laying lines on hexagon walls) as "printing in mid-air". Both pictures showed a perfect print; the owner got two PAUSED pushes. Earlier it also called the purge line at the front "spaghetti" (not two in a row, so no pause).
 - **Changed:** `watch_print.sh` now treats an answer that also says "nothing wrong", "no problem", "looks fine" or "not sure" as OK.
 - **Still open:** the "mid-air" misreading on lattice and honeycomb parts. Ideas: tell Haiku what the top of the part looks like in the description; ask it to compare with the previous picture; require three PROBLEM answers in a row for lattice parts; or ignore "mid-air" when the print is past 50 %.
+
+## 11. Network cancel and pause ignored during a print
+- **Seen (2026-11-24, 4-keycap test):** two `jobCtl_cmd` cancels to 192.168.68.52:8898 (the first during bed measuring, state WAIT_ON_TOOL), a pause, `M26` over 8899 and a cancel sent straight to 192.168.68.152 all answered "Success" and were ignored; the print went on into its first layers until the owner pressed Stop on the screen. The same pause call worked on 2026-11-22 (tennis ball).
+- **Why it matters:** the camera watcher and `alert.sh pause` rely on this call; the colour-swap plan relies on the printer obeying pause-type commands.
+- **Next step:** before the next print, with nothing at stake, test pause/resume/cancel over the network on a short print (and after bed measuring, not during it). Note the firmware state each time. Until confirmed, someone must stay reachable to press Stop on the screen.
