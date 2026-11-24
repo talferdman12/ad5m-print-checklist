@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-24 — Colour swap pause proven; flush face-down logo
+
+- README.md practical notes: the planned colour swap's pause is proven (M25 pauses, nozzle heater goes off, position held through 79 min; the file reheats after resume). New note: flush logo printed face down as a one-layer inlay (first-layer shrink off, one layer only, first line pushed back 0.8 mm).
+- Reason: the owner wanted the logo to look like one solid piece with the keycap; the face-down test printed cleanly with the white centred round the orange letters.
+- OPEN-ISSUES.md: issue 10 (watcher misread small parts and a hand), issue 11 (network pause worked mid-print; likely state-dependent), new issue 12 (recording auto-stops before a print with a long pause ends).
+
 ## 2026-11-24 — Planned colour swap (practical note)
 
 - README.md practical notes: how a planned colour swap is done (same material for both spools; everything prints together up to the swap; park at the front and pause; purge on a sacrificial block after resuming; the new colour one part at a time; simulate the file before sending).
