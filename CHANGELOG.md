@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-25 — Face-down logo: slice the face for looks
+
+- README.md practical note "Flush logo on a flat face": the first layer is the visible face, so use variable-width walls with gap fill, one first-layer wall then parallel lines, letters at least two lines thick, the letter layer 0.05 mm wider than its pocket, and check a drawing of the face from the G-code before printing.
+- Reason: the first face-down test had breaks in the S, D and K and a patchwork of lines on the white face (owner's photo). The simulator reproduced it from the old file; the new settings remove it in the simulation. Details and the v2 test file in OPEN-ISSUES.md issue 13.
+
 ## 2026-11-24 — Colour swap pause proven; flush face-down logo
 
 - README.md practical notes: the planned colour swap's pause is proven (M25 pauses, nozzle heater goes off, position held through 79 min; the file reheats after resume). New note: flush logo printed face down as a one-layer inlay (first-layer shrink off, one layer only, first line pushed back 0.8 mm).
