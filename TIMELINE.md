@@ -422,3 +422,14 @@ Entries up to 2026-11-21 morning were written afterwards (2026-11-21) from PRINT
 - What did not: my early homing; the recorder treated the resume as a new print (second Started push and a Halfway push at 10:16, no Finished push; sent one myself); the finish picture missed the parts.
 - Photos, recording, logs: `prints/records/keycaps_raised_test1_first_layer_phone1.jpg`, `_white_layer33_phone1.jpg`, `_paused_for_red_phone1.jpg`, `_red_purge_phone1.jpg`, `_red_letters_phone1.jpg`, `_red_letters_crop.jpg`, `_plate_cleared_phone1.jpg`; recording 20261126-095452_C-KIDS-raised-keycap-test-white-then-red-PETG (OK).
 
+### 2026-11-26 10:23–10:48 — C KIDS clicker housing, red (first print with a prime pad) — OK
+- File: `keyclicker_housing_corner_red_petg.gcode` (same housing and settings as the blue one, filament "Red PETG Slic3D (AD5M)", prime pad added by `prime_pad.py`: 12 × 6 mm, 3 layers, centre X −4.5 Y 22.3, 4.2 mm behind the housing's first line, with the start's missing 0.8 mm pushed on its first layer; thumbnail added)
+- Spool: 12, Red PETG Lite (Slic3D), loaded since the raised keycap test
+- Settings: 240 °C, bed 75 °C, 0.20 mm, small-part speeds, retraction 0.8, PA 0.05, fan 30–50 %, scarf seam at the back, no brim; profile "0.20mm Small Part PETG @AD5M". 111 layers, 7.7 g, estimate 20 min 53 s. Old start code (1.5 mm pull-back, no dab).
+- Changed since the last print with this spool: first housing in red; first prime pad on any print.
+- What happened: green light 10:22 (owner pulled off the red string); tip clean on camera at 10:22:54, no brushing. Recording 10:23:03 (phone 1), sent 10:23:05, Started push 10:23:08. 140 °C through measuring. At 10:28 a red ooze curl hung from the nozzle while it drew the purge line (owner: the heat-up ooze still rides on the nozzle and sometimes reaches the print; start code changed afterwards, open issue 2). At 10:28:42 red bits round the nozzle at the start of the first layer; by 10:29 the housing's first layer was a clean solid square. Walls clean on every check (layers 19, 52). Halfway push 10:41:15. Finished 10:48:27 (22 min); Finished push 10:48:22. Finish picture taken before the recording stopped (zoom 150 %): clean red housing, thin red string on the nozzle. Recording stopped (OK), plate cleared, heater off.
+- Result: one clean red housing. The pad sits behind it, out of the camera's view; owner to check whether the curl ended up in the pad and the housing's first line is full.
+- What worked: the pad file came through every check, and the first layer of the housing was clean despite the curl at the purge.
+- What did not: the heat-up curl on the nozzle (open issue 2).
+- Photos, recording, logs: `prints/records/keyclicker_housing_red_purge_curl_crop.jpg`, `_first_layer_crop.jpg`, `_47pct_crop.jpg`, `_finished_phone1.jpg`; recording 20261126-102303_C-KIDS-clicker-housing-red-PETG-prime-pad (OK).
+
