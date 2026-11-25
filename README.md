@@ -58,11 +58,11 @@ Always read the step number and wording from the current version of this checkli
 
 ## The green light
 
-When the agent is ready (step 32), it sends the person at the printer one message: the filament to load (material, brand and colour, by its number in FILAMENTS.md), the cleaning temperature, whether glue stick is needed, and the estimated print time and filament weight. The person gets everything below ready, in this order, then replies **"green light"**:
+When the agent is ready (step 32), it sends the person at the printer one message: the filament to load (material, brand and colour, by its number in FILAMENTS.md), whether the nozzle needs brushing and if so the cleaning temperature, whether glue stick is needed, and the estimated print time and filament weight. The person gets everything below ready, in this order, then replies **"green light"**:
 
 1. **Filament:** the named spool is loaded in the printer, with clean plastic of the new colour pushed through after any change; it turns freely with no tangles or snags, and clearly has enough left for the job (the agent gives the weight).
 2. **Plate:** old prints, purge lines and strings removed; plate washed with warm water and dish soap, rinsed and fully dry; back flat on its alignment pins without touching the printing surface. For PETG only: a thin even layer of glue stick wherever the print and the purge line will touch.
-3. **Nozzle:** brushed with a brass brush while the printer's screen shows the nozzle at or below the cleaning temperature the agent gave, until no old plastic, burnt residue or blobs remain; any hanging string pulled off with tweezers. Never clean it hotter.
+3. **Nozzle (only when the agent asks for brushing):** brushed with a brass brush while the printer's screen shows the nozzle at or below the cleaning temperature the agent gave, until no old plastic, burnt residue or blobs remain; any hanging string pulled off with tweezers. Never clean it hotter. When the camera showed a clean tip, the agent does not ask for brushing and the nozzle is left alone.
 4. **Ready:** nothing blowing on the printer (fan, open window, air conditioner) and nothing nearby that can fall onto the bed; someone can be reached until the print finishes.
 
 "Green light" means all four are true right now. If anything differs (for example a different spool is loaded, or a spool was stored sealed rather than left on the printer), the person says so instead, and the agent goes back to the step that depends on it.
@@ -125,9 +125,9 @@ When the agent is ready (step 32), it sends the person at the printer one messag
 ## Stage 4 — Getting the green light
 
 30. Check the printer is idle and ready, with no other job running or paused, and that it can be reached over the network.
-31. Set the nozzle to the cleaning temperature for this material (see the Material Table), never to printing temperature, so it is ready for brushing.
-32. Send the person at the printer the green light request described in "The green light" above: the filament (number, material, brand, colour), glue stick yes or no, the cleaning temperature, and the estimated print time and weight from step 29. Then wait. Do not send anything to the printer until the reply "green light" arrives for this print. If the reply says anything differs, go back to the step it affects (a different spool means step 7, and the file must be sliced again).
-33. After the green light, switch the nozzle heater off and let it cool below 140 °C. Then check the tip is still clean on camera: home the printer if needed, move the head to the front and lower the bed so the tip is in view of phone 1. If anything is stuck to the tip, the print does not start: tell the person what the camera shows and wait for a new green light.
+31. Look at the nozzle tip on camera, with the nozzle below 140 °C: home the printer if needed, move the head to the front and lower the bed so the tip is in view of phone 1, refocus and take a close picture. If the tip is clean (bare metal, nothing stuck to it, no hanging string), it needs no brushing: leave the heater off. Only if something is on it, set the nozzle to the cleaning temperature for this material (see the Material Table), never to printing temperature, so it is ready for brushing.
+32. Send the person at the printer the green light request described in "The green light" above: the filament (number, material, brand, colour), glue stick yes or no, brushing yes or no (with the cleaning temperature when yes), and the estimated print time and weight from step 29. Then wait. Do not send anything to the printer until the reply "green light" arrives for this print. If the reply says anything differs, go back to the step it affects (a different spool means step 7, and the file must be sliced again).
+33. After the green light, if the nozzle was heated for brushing, switch the heater off and let it cool below 140 °C. Then check the tip is still clean on camera (again, even if it was clean at step 31: the person may have touched it): home the printer if needed, move the head to the front and lower the bed so the tip is in view of phone 1. If anything is stuck to the tip, the print does not start: tell the person what the camera shows and wait for a new green light.
 
 ## Stage 5 — Sending and watching the start
 

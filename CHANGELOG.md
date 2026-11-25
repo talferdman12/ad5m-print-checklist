@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-26 — Brush the nozzle only when the camera shows it dirty
+
+- Step 31 ("Look at the nozzle tip on camera"): the agent looks at the tip on camera first and heats the nozzle to the cleaning temperature only if something is stuck to it. The green light's nozzle item and the request in step 32 now say whether brushing is needed. Step 33 cools the nozzle only if it was heated, and still checks the tip on camera.
+- Reason: the owner asked to stop the heat-up, cool-down, heat-up before every print. Heating a clean nozzle to 190 °C for brushing and cooling it again added about 3–5 minutes and can itself leave a curl on the tip (seen with white PETG on 2026-11-24). The 140 °C hold during homing and bed measuring and the 9-point bed measurement stay: they protect the first layer.
+
 ## 2026-11-26 — Three new Slic3D PETG Lite spools
 
 - FILAMENTS.md: added white (11), red (12) and blue (13) Slic3D PETG Lite, bought for the C KIDS clickers.
