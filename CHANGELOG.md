@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-26 — Three new Slic3D PETG Lite spools
+
+- FILAMENTS.md: added white (11), red (12) and blue (13) Slic3D PETG Lite, bought for the C KIDS clickers.
+- Reason: the owner bought the final clicker colours (white caps, red letters, red and blue housings).
+
 ## 2026-11-25 — Face-down logo: slice the face for looks
 
 - README.md practical note "Flush logo on a flat face": the first layer is the visible face, so use variable-width walls with gap fill, one first-layer wall then parallel lines, letters at least two lines thick, the letter layer 0.05 mm wider than its pocket, and check a drawing of the face from the G-code before printing.

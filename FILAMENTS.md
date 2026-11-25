@@ -20,6 +20,9 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 | 8 | PLA (basic) | PLA Marble | Grey speckled stone | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
 | 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-21 (first used for the Puck Low accents); left on the printer since |
 | 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
+| 11 | PETG | PETG Lite (TL6447) | White | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Bought 2026-11-26 for the C KIDS keycaps (white bodies) |
+| 12 | PETG | PETG Lite (TL6448) | Red | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Bought 2026-11-26 for the C KIDS letters and red housings |
+| 13 | PETG | PETG Lite | Blue | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Bought 2026-11-26 for the blue housings |
 
 ## Notes on particular spools
 
