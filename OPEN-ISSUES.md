@@ -100,3 +100,9 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
   - 0.4 mm bevel instead of the 0.8 mm chamfer;
   - keycaps reprinted in snake order, reversed every layer (`serpentine()` in plate_flush.py): longest jump 85 → 28 mm, and each layer starts on the keycap the last one ended on.
   Still to do by hand at the print: glue stick under each keycap.
+
+## 14. Recorder treats a resume after a colour-swap pause as a new print
+- **Seen (2026-11-26, raised keycap test):** after the M25 pause and a network resume at 10:16, printcam sent a second "Started" push and a "Halfway" push (at 86 %) within two seconds, and no "Finished" push when the print completed at 10:17:44. No pause push was sent at 10:12 either.
+- **Likely cause:** its once-per-print notification logic keys on a state change from paused back to printing as a new job.
+- **Next step:** in printcam, keep the same job across PAUSED → printing for the same file name, and send a "Paused" push. Until fixed, send the swap and finished pushes by hand (./alert.sh).
+
