@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-26 — Prime pad next to the model on every print
+
+- Step 19 ("Do not add a skirt"): every print gets a small three-layer prime pad close to where the model's first line starts, printed first on each of those layers; step 28 checks it is there and clear of the parts; practical note on `prime_pad.py`, which adds and checks it.
+- Reason: the owner's observation that the first layer is where prints keep going wrong, and the purge block in the raised-logo keycap test (purge right next to the part before the new colour) worked well. The records agree: the start leaves the filament 0.8 mm short so the first line starts thin (open issue 2), and curls or strings on the tip are carried from the purge line at the front and dropped at the model's first line (issues 2 and 13, white PETG curl 2026-11-24, white drop on the tip 2026-11-26). Not yet proven by a print.
+
 ## 2026-11-26 — Brush the nozzle only when the camera shows it dirty
 
 - Step 31 ("Look at the nozzle tip on camera"): the agent looks at the tip on camera first and heats the nozzle to the cleaning temperature only if something is stuck to it. The green light's nozzle item and the request in step 32 now say whether brushing is needed. Step 33 cools the nozzle only if it was heated, and still checks the tip on camera.
