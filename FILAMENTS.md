@@ -22,7 +22,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 | 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
 | 11 | PETG | PETG Lite (TL6447) | White | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Bought 2026-11-26 for the C KIDS keycaps (white bodies) |
 | 12 | PETG | PETG Lite (TL6448) | Red | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Bought 2026-11-26 for the C KIDS letters and red housings |
-| 13 | PETG | PETG Lite | Blue | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Bought 2026-11-26 for the blue housings |
+| 13 | PETG | PETG Lite | Blue | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-26 (first print: clicker housing); on the printer until swapped for white the same morning |
 
 ## Notes on particular spools
 
@@ -57,5 +57,6 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
   What the failed try looked like: a blob of PETG pulled off the nozzle and smeared onto the right side of the brim, with a string trailing from it; a bump where the seam started at the front; a thin string across the part. These are signs of PETG gathering on a too-hot nozzle and being dropped at the seam, which is what the three changes fix.
 - **White PETG (5):** first used 2026-11-24 (4-keycap test, cancelled at layer ~4 for a redesign) with the clean orange settings (240 °C, bed 75, PA 0.05, fan 30–50 %, 4 mm brim): purge line and first layers looked normal on camera. Heating to 190 °C for brushing left a small curl on the tip, as the orange does. Face-down keycap test (same evening): four keycaps printed clean at 240 °C, bed 75, no brim, after an orange first layer; one small string tuft on one cap and a fine string between two.
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
+- **Blue PETG Lite (13):** first used 2026-11-26 (clicker housing, 21 min, 7.7 g) with the clean Slic3D orange settings (240 °C, bed 75, PA 0.05, fan 30–50 %, retraction 0.8, scarf seam, no brim on a solid floor): clean purge line, flat first layer, no strings on camera.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
 - **Cardboard spools (1, 2):** can shed a little dust; wipe the rims if any shows.
