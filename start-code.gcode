@@ -15,11 +15,13 @@ G28 ; home, nozzle at 140
 BED_MESH_CALIBRATE PROBE_COUNT=3,3 ; quick 3x3 bed measurement every print, nozzle clean and at 140
 G1 Z10 F3000 ; raise well clear of the plate
 G1 X110 Y-100 F6000 ; park next to (not over) the purge line
-G1 E-1.5 F1800 ; pull filament back before heating so it does not drip
+G1 E-2.5 F1800 ; pull filament back before heating so it does not drip
 M109 S[nozzle_temperature_initial_layer] ; heat to print temperature while raised
 G1 X95 Y-110 Z0.3 F3000 ; come down at an angle, away from any drip
-G1 E1.5 F1200 ; push filament back the same amount
-G1 X55 E6 F1200 ; slow prime into the purge line
+G1 E2.5 F1200 ; push filament back the same amount
+G1 X94.8 E2 F6 ; crawl 0.2 mm in 2 s pushing out a small dab: the ooze curl hanging from the tip melts into it and sticks to the plate
+G1 X93 E0.6 F300 ; ease out of the dab so it stays on the plate
+G1 X55 E5.4 F1200 ; slow prime into the purge line
 G1 X-55 E10 F2400 ; purge line
 G1 Y-109.6 F2400
 G1 X55 E6 F2400 ; second purge line

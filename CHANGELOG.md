@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-26 — Start code: catch the heat-up ooze in a dab
+
+- start-code.gcode and steps 15–16: the pull-back before heating goes from 1.5 to 2.5 mm (pushed back the same), and after coming down at the purge start the nozzle crawls 0.2 mm in 2 s pushing out a 2 mm dab before the purge line. The slicer's machine profile and the four files built but not printed (25 housings, the two 41-keycap plates, the face-down test) were updated the same way and re-checked.
+- Reason: the owner saw again that PETG oozes while the nozzle heats from 140 °C to printing temperature; the curl is laid at the purge start, does not always stick, rides along on the nozzle and can drop onto the print (open issue 2; seen on camera at 10:28 today, a red curl at the nozzle during the purge of the red housing). The larger pull-back was issue 2's planned next step; the dab glues the curl to the plate where it lands. The prime pad (step 19) stays as the last catch. Not yet proven by a print.
+
 ## 2026-11-26 — Prime pad next to the model on every print
 
 - Step 19 ("Do not add a skirt"): every print gets a small three-layer prime pad close to where the model's first line starts, printed first on each of those layers; step 28 checks it is there and clear of the parts; practical note on `prime_pad.py`, which adds and checks it.
