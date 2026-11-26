@@ -108,3 +108,10 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Likely cause:** its once-per-print notification logic keys on a state change from paused back to printing as a new job.
 - **Next step:** in printcam, keep the same job across PAUSED → printing for the same file name, and send a "Paused" push. Until fixed, send the swap and finished pushes by hand (./alert.sh).
 - 2026-11-26 11:14 (blue-letter keycap): same again; this time the pause push said "Print ended (pause)", then Started and Halfway after the resume, no Finished.
+
+## 15. Keycap at the plate's outer column lifted on a full 41-cap plate
+- **Seen (2026-11-26, keycap plate 1, layers 3–6, about 13:00–13:20):** one keycap in the left (outer) column, third row from the back, came loose / lifted; the owner took it off the plate mid-print. Its centre column's foot stayed on the plate and the printer keeps printing that cap in the air. The other 40 caps were fine on camera. Picture: `prints/records/keycaps41_plate1_cap_removed_zoom.jpg`.
+- **Settings:** 240 °C, bed 75 °C, 4 mm brim, glue stick over the whole plate, 3 × 3 bed measurement, caps at 28.2 mm pitch out to X ±84.6.
+- **Likely causes:** the outer columns sit near the plate edge, where the 3 × 3 measurement only extrapolates (open issue 3 already says to try a finer grid if edge parts come out wrong) and where the plate runs a little cooler; possibly thinner glue at the edge.
+- **Next step for the next full plate:** a 5 × 5 bed measurement for plates that cover the bed (about a minute more), and glue stick taken right out to the plate edges. Check the outer column on camera through the first layers. If it happens again, keep the outer ring of positions empty.
+
