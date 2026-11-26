@@ -14,6 +14,7 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Confirmed fixed:** the backwards wipe over the purge line keeps the nozzle clean; no curl reached the nozzle or the print.
 - **Next step:** test a larger pull-back before heating (about 2.5 mm, pushed back by the same amount before the purge). Only change the start code if the curl gets smaller and nothing else gets worse.
 - 2026-11-26: owner saw the heat-up curl ride on the nozzle onto the print again (red housing, 10:28). Start code changed: 2.5 mm pull-back before heating and a 2 mm dab at the purge start to glue the curl to the plate. To prove: on the next prints the curl stays in the dab at the purge start on camera and nothing reaches the pad or the part.
+- 2026-11-26 11:00, first print with the new start code (blue-letter keycap): a string still oozed while heating; the dab printed but a curl still hung on the nozzle through the purge line; the prime pad then took it and the parts' first layers were clean. So far the pad does the catching, not the dab. Keep watching both on the next prints.
 - 2026-11-26: a prime pad next to the model (step 19, `prime_pad.py`) now takes the missing 0.8 mm and anything the tip carries from the purge line. To prove: the first print with a pad shows a full first line on the model and no curl at its start.
 
 - 2026-11-23: the cold-nozzle check before the clicker test showed a ~4 cm orange string hanging from the tip after cooling from the 190 °C cleaning temperature. The owner chose to start without pulling it off (print cancelled for another reason before the purge, so the effect is unknown).
@@ -106,4 +107,4 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Seen (2026-11-26, raised keycap test):** after the M25 pause and a network resume at 10:16, printcam sent a second "Started" push and a "Halfway" push (at 86 %) within two seconds, and no "Finished" push when the print completed at 10:17:44. No pause push was sent at 10:12 either.
 - **Likely cause:** its once-per-print notification logic keys on a state change from paused back to printing as a new job.
 - **Next step:** in printcam, keep the same job across PAUSED → printing for the same file name, and send a "Paused" push. Until fixed, send the swap and finished pushes by hand (./alert.sh).
-
+- 2026-11-26 11:14 (blue-letter keycap): same again; this time the pause push said "Print ended (pause)", then Started and Halfway after the resume, no Finished.

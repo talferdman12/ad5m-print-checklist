@@ -22,7 +22,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 | 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
 | 11 | PETG | PETG Lite (TL6447) | White | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-26 (raised keycap test) |
 | 12 | PETG | PETG Lite (TL6448) | Red | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-26 (raised keycap letters); on the printer since |
-| 13 | PETG | PETG Lite | Blue | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-26 (first print: clicker housing); on the printer until swapped for white the same morning |
+| 13 | PETG | PETG Lite | Blue | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-26 (first print: clicker housing); used again for raised keycap letters 2026-11-26 11:17; on the printer since |
 
 ## Notes on particular spools
 
@@ -60,5 +60,6 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 - **White PETG Lite (11):** first used 2026-11-26 (raised keycap test body) with the Keytek white settings (240 °C, bed 75, PA 0.05, fan 30–50 %, 4 mm brim): clean purge line and walls, no strings. Loading it left a small drop on the tip.
 - **Red PETG Lite (12):** first used 2026-11-26 for raised letters after an M25 swap at 240 °C: purged cleanly on the purge block; a red string trailed from the nozzle after the purge. Housing 2026-11-26 (same settings as blue): clean walls, no strings on the part; an ooze curl at the nozzle during the purge line after heating.
 - **Blue PETG Lite (13):** first used 2026-11-26 (clicker housing, 21 min, 7.7 g) with the clean Slic3D orange settings (240 °C, bed 75, PA 0.05, fan 30–50 %, retraction 0.8, scarf seam, no brim on a solid floor): clean purge line, flat first layer, no strings on camera.
+  Blue (13) as raised keycap letters after an M25 swap (2026-11-26, 240 °C): purged on the block with a thin string draped off it; letters clean on camera.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
 - **Cardboard spools (1, 2):** can shed a little dust; wipe the rims if any shows.
