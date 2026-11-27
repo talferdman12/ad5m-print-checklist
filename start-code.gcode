@@ -12,7 +12,7 @@ M109 S140 ; hold nozzle at 140 for homing and bed measuring
 G90 ; absolute positions
 M83 ; relative extrusion
 G28 ; home, nozzle at 140
-BED_MESH_CALIBRATE PROBE_COUNT=3,3 ; quick 3x3 bed measurement every print, nozzle clean and at 140
+BED_MESH_CALIBRATE PROBE_COUNT=5,5 ; 5x5 bed measurement every print, nozzle clean and at 140
 G1 Z10 F3000 ; raise well clear of the plate
 G1 X110 Y-100 F6000 ; park next to (not over) the purge line
 G1 E-2.5 F1800 ; pull filament back before heating so it does not drip

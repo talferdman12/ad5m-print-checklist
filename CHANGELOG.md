@@ -2,6 +2,19 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-27 — The PETG settings that printed two perfect plates, written into the checklist
+
+- Material Table, PETG row: pressure advance 0.05 (was "not tested"; used on every PETG print since 2026-11-20 with clean line starts), nozzle 240 °C, fan off on the first layer, retraction 1.2 mm at 35 mm/s with a 3 mm wipe, flow limit 13 mm³/s.
+- New section under the Material Table, "PETG settings that printed perfect plates": every setting of the two 25-housing plates (2026-11-26 and 27): temperatures, layers, walls, infill, speeds, accelerations, travel lift, retraction, seam, plate layout and start.
+- Step 13 and `start-code.gcode`: 5 × 5 bed measurement every print (was 3 × 3). The slicer's machine profile on the printer Mac was changed the same way.
+- Step 21: travel lift about 0.8 mm on every travel move, travel acceleration about 4000, avoid crossing walls on.
+- Step 24: plates of many copies: even grid, at least about 6 mm between parts, at least about 15 mm in from the plate's edges, part labels on.
+- Step 25: 5 mm brim for ring-shaped footprints on a full plate (open issue 15, still to be proven by the v2 keycap plate).
+- Step 28: the file check includes the 5 × 5 measurement, travel lift, travel acceleration, retraction and wipe.
+- Step 40: the camera watcher only alerts (it never pauses on its own unless the owner asked for that print) and stops itself when the print is finished, cancelled or cleared.
+- FILAMENTS.md, red (12): use the blue (13) plate settings.
+- Reason: the owner asked that the work behind the two perfect PETG plates be in the checklist so anyone, any session or person, gets the same result. Until now the 0.8 mm lift, travel acceleration 4000, avoid crossing walls, 5 × 5 measurement, PETG retraction and pressure advance lived only in slicer profiles on one computer, and the checklist still said 3 × 3, pressure advance "not tested" and a watcher that pauses. Proven by the two plates (TIMELINE 2026-11-26 22:36 and 2026-11-27 08:51), except the 5 mm brim.
+
 ## 2026-11-26 — Start code: catch the heat-up ooze in a dab
 
 - start-code.gcode and steps 15–16: the pull-back before heating goes from 1.5 to 2.5 mm (pushed back the same), and after coming down at the purge start the nozzle crawls 0.2 mm in 2 s pushing out a 2 mm dab before the purge line. The slicer's machine profile and the four files built but not printed (25 housings, the two 41-keycap plates, the face-down test) were updated the same way and re-checked.
