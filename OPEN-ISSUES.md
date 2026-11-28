@@ -133,3 +133,13 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Seen (2026-11-26/27 and 2026-11-27, 25-housing plates):** after the print finished, `watch_print.sh` kept running. On 27 Nov the printer reported PAUSED after the finish, so the watcher waited as if for a colour swap; when the owner then took the parts off, Haiku saw an empty plate twice and the watcher pushed "PROBLEM: plate is empty" at 17:53. The night before it ran on until its time limit.
 - **Cause:** the watcher only looked for "PAUSED" in `ff.py status` and relied on Haiku saying FINISHED twice.
 - **Fix (2026-11-27):** the watcher now reads the 8898 status every round and stops when it is completed, cancelled or ready, or when the printer is no longer BUILDING; only BUILDING + PAUSED counts as a pause. To confirm on the next print's finish.
+
+## 18. Recorder push pictures not saved (permission denied)
+- **Seen (2026-11-28 21:16, doorbell prototype):** printcam logged `push: picture not saved ([Errno 13] Permission denied: '/opt/homeassistant/config/www/printcam-preview-.../notify/...jpg')` and sent the Started push without its picture.
+- **Likely cause:** the notify folder inside Home Assistant's config is owned by another user since the switch from ntfy to Home Assistant pushes.
+- **Next step:** on cortex, give printcam's user write access to that folder (or have printcam write elsewhere and serve it), then check the next Started push carries a picture.
+
+## 19. Plate-level camera view: no first layer check, false watcher alerts
+- **Seen (2026-11-28, doorbell prototype):** phone 1 had been moved down to plate level and looked across the plate edge-on. The black first layer and the purge line could not be seen (steps 37 and 38 not done on camera), and the watcher twice read the plate's grey front lip as a grey part "off the plate" or the print "in mid-air" (21:40, 21:57), sending false alerts. Describing the view to the watcher ("the big light-grey bar is the plate's edge") stopped them; the owner later raised the phone.
+- **Next step:** add to step 31: before sending, take a phone 1 picture and confirm it looks down on the whole plate; if not, ask for the phone to be moved before the green light. Keep the watcher's description of what the camera sees (plate edge, colours) in `watch_print.sh`'s prompt.
+
